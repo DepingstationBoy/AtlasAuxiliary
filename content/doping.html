@@ -1,0 +1,9 @@
+<h3>语法</h3>
+<p><code>doping &lt;DISTRIBUTION_TYPE&gt; &lt;DOPANT_TYPE&gt; &lt;POSITION_PARAMETER&gt;</code></p>
+<h3>描述</h3>
+<p>Doping 语句用于定义杂质分布，不同区域相邻处的杂质分布相互影响。</p>
+<p>分布类型 DISTRIBUTION_TYPE 可以是 <code>uniform</code>（均匀）、<code>gaussian</code>（高斯）和<code>erfc</code>（余误差函数）分布。</p> 
+<p>一般的均匀分布的语句为：<em><code>doping region=* uniform concentration=* n.type|p.type </code></em></p>
+<p>一般的高斯分布的语句为：<em><code>doping region=* gaussian concentration=* n.type|p.type peak=* characteristic=*</code></em>此时 concentration 表示峰值浓度；peak 表示峰值位置（相对于整个器件）；characteristic 表示高斯分布的标准差，数值越大分布越平坦。</p>
+<p>余误差函数分布的参数定义与高斯分布相同。</p>
+<a class="material" target="_blank" href="./content/material/Doping.pdf"><span></span><span>参考资料</span></a>

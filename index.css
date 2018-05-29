@@ -1,0 +1,147 @@
+body
+{
+    font-family:"Microsoft JhengHei","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.tooltip
+{
+    text-indent: 0 !important;
+}
+
+/*message*/
+#message
+{
+    display: none;
+    position: fixed;
+    right:0;
+
+    width:20%;
+}
+
+/*container*/
+#container
+{
+    display: flex;
+
+    min-width:800px;
+}
+
+#side,#main
+{
+    padding:1.5rem;
+}
+
+/*side*/
+#side_directory
+{
+    width:320px;
+    padding:1rem;
+
+    color:darkblue;
+    font-size:1.1em;
+    line-height: 1.6;
+}
+
+#side_directory >div
+{
+    margin-left:1rem;
+}
+
+#side_directory .directoryItem, .multilevelList_title
+{
+    position: relative;
+
+    cursor: pointer;
+}
+#side_directory .directoryItem:hover, .multilevelList_title:hover
+{
+    color:#00C8FF;
+}
+
+#side_directory .directoryItem.level1, .multilevelList_title
+{
+    font-weight: bolder;
+}
+
+#side_directory .directoryItem.level2::before
+{
+    content:'○';
+    position: relative;
+    top:-0.2rem;
+
+    margin-right:0.5rem;
+
+    font-size:0.5rem;
+}
+
+.multilevelList_list
+{
+    font-weight: normal !important;
+}
+
+/*main*/
+#main
+{
+    flex-basis: 0;
+    flex:1;
+}
+
+#main_content
+{
+    min-height: 90vh;
+    padding:2rem 2rem;
+    border:1px solid lightgrey;
+
+    border-radius:1rem;
+}
+
+#main_content_title
+{
+    border-bottom:1px solid lightgrey;
+}
+
+#main_content_text
+{
+    position: relative;
+
+    padding:2rem;
+}
+
+#main_content_text > p
+{
+    text-indent:2em;
+}
+
+#main_content_text > table
+{
+    width:70%;
+    margin:0 auto;
+}
+
+#main_content_text em
+{
+    display: block;
+
+    text-align: center;
+}
+
+#main_content_text .material
+{
+    display: flex;
+    align-items: center;
+
+    margin-top:8rem;
+}
+#main_content_text .material > span:nth-child(1)
+{
+    display: inline-block;
+
+    width:1em;
+    height:1em;
+    margin-right:0.5rem;
+
+    background-image:url(./image/Material.svg);
+    background-size:100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}

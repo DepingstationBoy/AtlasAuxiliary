@@ -1,0 +1,7 @@
+<h3>语法</h3>
+<p><code>mesh [auto] [space.multi=*] [width=*]</code></p>
+<h3>描述</h3>
+<p>网格定义从 mesh 开始，在定义了结构的尺寸的情况下可用 mesh atuo 让软件自动定义网格，用这种方法定义的网格较稀疏。参数 space.multi 的值大于1时，网格变得稀疏。参数 width 用于设定 Z 坐标尺寸。</p>
+<p>语句<em><code>x.mesh location=* spacing=*</code></em>用于定义横向网格，其中location表示定义的位置，单位 um，spacing定义在location位置处的网格间隔，这个值越小，则网格越密。在两个定义点之间的区域的网格间距由软件计算，呈现渐变变化。<em><code>y.mesh location=* spacing=*</code></em>用于定义纵向网格。</p>
+<p>spacing参数越小则网格越密，仿真精度越高，但仿真速度越低，同时收敛可能性降低。可在仿真初期采用较疏网格，确定器件结构后采用较密网格。在器件关键结构和结构交界处采用较密网格，在非关键区域和体区域采用较疏网格。</p>
+<a class="material" target="_blank" href="./content/material/Mesh.pdf"><span></span><span>参考资料</span></a>

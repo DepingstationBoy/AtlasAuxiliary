@@ -1,0 +1,14 @@
+<h3>语法</h3>
+<p><code>models srh</code></p>
+<p><code>material taup0=* taun0=* etrap=*</code></p>
+<h3>描述</h3>
+<p><code>etrap</code>是陷阱能级和本征费米能级的差，<code>taup0</code>和<code>taun0</code>分别是空穴和电子的载流子寿命。</p>             
+<p>禁带中存在陷阱时会发生声子跃迁，这一过程由 Shockley-Read-Hall 模型描述：<em>`R_(SRH)=(pn-n_(ie)^2)/(TAUP0[n+n_(ie)exp((ETRAP)/(kT_L))]+TAUN0[p+n_(ie)exp((-ETRAP)/(kT_L))])`</em></p>
+<p>模型参数默认值：</p>
+<table class="table">     
+    <tr class="active"><th>语句</th><th>参数</th><th>默认值</th></tr>  
+    <tr><td>material</td><td><code>etrap</code></td><td>0</td></tr>
+    <tr><td>material</td><td><code>taun0</code></td><td>1e-7</td></tr> 
+    <tr><td>material</td><td><code>taup0</code></td><td>1e-7</td></tr>   
+</table>
+<a class="material" target="_blank" href="./content/material/ShockleyReadHallRecombination.pdf"><span></span><span>参考资料</span></a>

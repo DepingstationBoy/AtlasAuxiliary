@@ -1,0 +1,7 @@
+<h3>语法</h3>
+<p><code>models trap.tunneling</code></p>
+<p><code>material taup0=* taun0=* etrap=*</code></p>
+<h3>描述</h3>
+<p><code>taup0</code>和<code>taup0</code>分别是空穴和电子的载流子寿命，<code>etrap</code>是陷阱能级和本征费米能级的差。</p>             
+<p>在强电场下，电子借助陷阱态隧穿过禁带。此模型是一种对 Shockley-Read-Hall 复合模型的修改，修改后的复合率为：<em>`R_(SRH)=(pn-n_(ie)^2)/((TAUP0)/(1+Gamma_p^(DIRAC))[n+n_(ie)exp((ETRAP)/(kT_L))]+(TAUN0)/(1+Gamma_n^(DIRAC))[p+n_(ie)exp((ETRAP)/(kT_L))])`</em>其中`Gamma_p^(DIRAC)`和`Gamma_n^(DIRAC)`是狄拉克阱的电场增强项。</p>
+<a class="material" target="_blank" href="./content/material/TrapAssistedTunneling.pdf"><span></span><span>参考资料</span></a>

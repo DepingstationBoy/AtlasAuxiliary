@@ -1,0 +1,21 @@
+<h3>语法</h3>
+<p><code>impact selb an1=* ap1=* bn1=* bp1=* an2=* ap2=* bn2=* bp2=* betan=* betap=* egran=*</code></p>
+<h3>描述</h3>
+<p>当电场强度大于 egran 时，后缀为 1 的参数生效，当电场强度小于 egran 时，后缀为 2 的参数生效。</p>               
+<p>此模型属于本地电场碰撞离化模型，对电场敏感。电子和空穴的碰撞离化率由下式表示：<em>`alpha_n=ANexp[-((BN)/E)^(BETAN)]`</em><br/><em>`alpha_p=APexp[-((BP)/E)^(BETAP)]`</em>其中 `E` 为电场强度。</p>
+<p>模型参数默认值：</p>
+<table class="table">     
+    <tr class="active"><th>语句</th><th>参数</th><th>默认值</th></tr> 
+    <tr><td>impact</td><td><code>an1</code></td><td>7.03e5</td></tr>  
+    <tr><td>impact</td><td><code>an2</code></td><td>7.03e5</td></tr>  
+    <tr><td>impact</td><td><code>ap1</code></td><td>6.71e5</td></tr>  
+    <tr><td>impact</td><td><code>ap2</code></td><td>1.58e6</td></tr>  
+    <tr><td>impact</td><td><code>bn1</code></td><td>1.231e6</td></tr>  
+    <tr><td>impact</td><td><code>bn2</code></td><td>1.231e6</td></tr>  
+    <tr><td>impact</td><td><code>bp1</code></td><td>1.693e6</td></tr>  
+    <tr><td>impact</td><td><code>bp2</code></td><td>2.036e6</td></tr>  
+    <tr><td>impact</td><td><code>betan</code></td><td>1.0</td></tr>  
+    <tr><td>impact</td><td><code>betap</code></td><td>1.0</td></tr>  
+    <tr><td>impact</td><td><code>egran</code></td><td>4e5</td></tr>  
+</table>
+<a class="material" target="_blank" href="./content/material/SelberherrImpactIonization.pdf"><span></span><span>参考资料</span></a>

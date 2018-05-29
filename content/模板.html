@@ -1,0 +1,50 @@
+<p>一般模板：</p>
+<p><pre>
+go atlas
+
+# 网格
+mesh width=*
+x.mesh location=* spacing=*
+y.mesh location=* spacing=*
+
+# 结构
+## 区域 
+region number=1 material=air
+region number=2 material=* x.min=* x.max=* y.min=* y.max=* acceptors=*
+region number=3 material=* bottom thickness=* donors=*
+## 电极
+electrode name=cathode top
+electrode name=anode bottom
+## 掺杂
+doping region=* n-type uniform concentration=* 
+#doping region=* p-type gauss peak=* y.char=* concentration=*
+
+# 模型
+models print temperature=273.5 fermidirac 
+models material=* *
+material material=* *
+
+# 方法
+method newton maxtrap=20 climit=1e-3
+beam number=* x.origin=* y.origin=* angle=-90 wavelength=*
+
+# 输出
+output *
+## 结构
+solve init
+solve b1=*
+solve vcathode=0 vstep=* vfinal=* name=cathode
+save outfile=Structure.str
+tonyplot Structure.str -set Structure.set
+## 暗电流
+log outfile=IV_Dark.log
+solve init
+solve vcathode=0 vstep=* vfinal=* name=cathode
+tonyplot IV_Dark.log -set IV.set
+## 光电流
+log outfile=IV_Light.log
+solve init
+solve b1=*
+solve vcathode=0 vstep=* vfinal=* name=cathode
+tonyplot IV_Light.log -set IV.set
+</pre></p>

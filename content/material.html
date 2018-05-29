@@ -1,0 +1,22 @@
+<h3>语法</h3>
+<p><code>material &lt;REGION&gt; &lt;MATERIAL_DEFINITION&gt;</code></p>
+<h3>描述</h3>
+<p>Material 语句用于定义材料特性。当设定区域时，语句仅对该区域生效，否则对全部符合的材料生效。可以使用<code>region=n</code>和<code>x.min=* x.max=* y.min=* y.max=*</code>的方式定义区域，其中 n 表示在 region 语句中定义的区域的标号。一般的用法为：<em><code>material material=* *=*</code></em></p>
+<p>常用的材料参数和意义有：</p>
+<table class="table">     
+    <tr><td><code>affinity</code></td><td>电子亲和势</td></tr>   
+    <tr><td><code>align</code></td><td>材料能级差</td></tr>     
+    <tr><td><code>augn</code></td><td>电子俄歇系数</td></tr>
+    <tr><td><code>augp</code></td><td>空穴俄歇系数</td></tr>
+    <tr><td><code>copt</code></td><td>光学复合系数</td></tr>  
+    <tr><td><code>eg300</code></td><td>禁带宽度（温度300K）</td></tr> 
+    <tr><td><code>imag.index</code></td><td>光折射参数虚部</td></tr>
+    <tr><td><code>real.index</code></td><td>光折射参数实部</td></tr>
+    <tr><td><code>nc300</code></td><td>导带态密度</td></tr> 
+    <tr><td><code>nv300</code></td><td>价带带态密度</td></tr>
+    <tr><td><code>permittivity</code></td><td>介电常数</td></tr>
+    <tr><td><code>taun0</code></td><td>电子寿命</td></tr>
+    <tr><td><code>taup0</code></td><td>空穴寿命</td></tr>
+    <tr><td><code></code></td><td></td></tr>
+</table>
+<a class="material" target="_blank" href="./content/material/Material.pdf"><span></span><span>参考资料</span></a>

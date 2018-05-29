@@ -1,0 +1,13 @@
+<h3>语法</h3>
+<p><code>material eg300=* egalpha=* egbeta=*</code></p>
+<h3>描述</h3>
+<p><code>eg300</code> 为温度等于 300K 时的禁带宽度。</p>
+<p>一般的温度依赖的禁带宽度模型的公式如下：<em>`E_g``(T_L)=E_g``(0)-EGALPHA(T_L^2)/(T_L+EGBETA)`<br/>`=EG300+EGALPHA[300^2/(300+EGBETA)-T_L^2/(T_L+EGBETA)]`</em></p>
+<p>模型参数默认值：</p>
+<table class="table">     
+    <tr class="active"><th>语句</th><th>参数</th><th>默认值</th></tr>  
+    <tr><td>material</td><td><code>eg300</code></td><td>1.08</td></tr>
+    <tr><td>material</td><td><code>egalpha</code></td><td>4.73e-4</td></tr> 
+    <tr><td>material</td><td><code>egbeta</code></td><td>636</td></tr>  
+</table>
+<a class="material" target="_blank" href="./content/material/Bandgap.pdf"><span></span><span>参考资料</span></a>

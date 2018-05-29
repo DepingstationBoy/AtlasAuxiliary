@@ -1,0 +1,8 @@
+<h3>语法</h3>
+<p><code>region number=&lt;N&gt; material=&lt;MATERIAL&gt; [&lt;POSITION&gt;]</code></p>
+<h3>描述</h3>
+<p>Region 语句用于定义模型的结构，通常的用法为<em><code>region number=* x.min=* x.max=* y.min=* y.max=* material=*;</code></em>或<em><code>region number=* top|bottom thickness=* material=* ny=*;</code></em>material 表示要定义的材料。在第一种定义方法中，x.min，x.max，y.min，y.max定义区域的边界，默认值为网格的边界，若没有定义网格则报错。在第二种定义方式中，top 表示向上衍生，bottom 表示向下延伸，以上一次的计算值为起始值，最初的起始值是 0；thickness 表示厚度；nx和ny 表示在这个区域内横向和纵向网格数，若定义了这两个或其中一个参数，则需要在 mesh 语句中设置 auto。在二维仿真中 Z 方向的默认尺寸是1 um。</p>
+<p>Region 语句是不断叠加的，新定义的区域（若有重叠）会覆盖在先定义的区域上。应当为定义了网格的所有范围定义区域，若没有材料可定义为空气，通常定义第一个 region 语句为：<em><code>region number=1 material=air</code></em></p>
+<p>用<code>x.comp=*</code>和<code>y.comp=*</code>来定义三元化合物和四元化合物的组份。对于组份渐变的区域，用<code>compx.top=* compx.bottom=*</code>和<code>compy.top=* compy.bottom=*</code>定义区域顶部和底部的组份，中间区域组份线性变化。</p>
+<p>在 region 语句中可以定义简单的均匀掺杂，使用语句<code>acceptors=*</code>和<code>donors=*</code>分别定义P型和N型掺杂。</p>
+<a class="material" target="_blank" href="./content/material/Region.pdf"><span></span><span>参考资料</span></a>

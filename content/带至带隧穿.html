@@ -1,0 +1,20 @@
+<h3>语法</h3>
+<p><code>models bbt.std bb.a=* bb.b=* bb.gamma=*</code></p>
+<p><code>models bbt.kl bb.a=* bb.b=* bb.gamma=*</code></p>
+<h3>描述</h3>
+<p>带至带隧穿发生在高电场中，其产生率有下式表示：<em>`G_(BBT)=D·BB.A·E^(BB.GAMMA)exp(-(BB.B)/E)`</em>其中 `D` 是统计常数，`E`是电场强度。Bbt.std 模型用于直接传输，bbt.kl 模型用于间接传输。</p>
+<p>Bbt.std 模型参数默认值：</p>
+<table class="table">     
+    <tr class="active"><th>语句</th><th>参数</th><th>默认值</th></tr> 
+    <tr><td>models</td><td><code>bb.a</code></td><td>9.6615e18</td></tr>
+    <tr><td>models</td><td><code>bb.b</code></td><td>3.0e7</td></tr>  
+    <tr><td>models</td><td><code>bb.gamma</code></td><td>2.0</td></tr>  
+</table>
+<p>Bbt.kl 模型参数默认值：</p>
+<table class="table">     
+    <tr class="active"><th>语句</th><th>参数</th><th>默认值</th></tr> 
+    <tr><td>models</td><td><code>bb.a</code></td><td>4.0e14</td></tr>
+    <tr><td>models</td><td><code>bb.b</code></td><td>1.9e7</td></tr>  
+    <tr><td>models</td><td><code>bb.gamma</code></td><td>2.5</td></tr>  
+</table>
+<a class="material" target="_blank" href="./content/material/StandardBandToBandTunneling.pdf"><span></span><span>参考资料</span></a>
