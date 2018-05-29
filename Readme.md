@@ -2,7 +2,7 @@
     <h1>Atlas 辅助手册</h1>
     <h4>
         <p>半导体器件仿真软件 Silvaco Atlas 资料和经验总结</p>
-        <p>链接：<a href='http://skywingjiang.gitee.io/atlasdocument' target='_blank'>Atlas 辅助手册</a></p>
+        <p>链接：<a href='https://wingsj0.github.io/AtlasAuxiliary/' target='_blank'>Atlas 辅助手册</a></p>
     </h4>
 </header>
 <br/>
